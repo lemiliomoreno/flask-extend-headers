@@ -82,7 +82,7 @@ Server: Werkzeug/2.0.2 Python/3.9.6
 Date: Mon, 18 Oct 2021 19:33:46 GMT
 ```
 
-If we add the headers:
+If we add the headers it'll return `users`:
 
 ```bash
 > curl http://localhost:5000/api/users -I -H "Accept-Version: application/v1"
@@ -92,6 +92,17 @@ Content-Length: 5
 Server: Werkzeug/2.0.2 Python/3.9.6
 Date: Mon, 18 Oct 2021 19:34:55 GMT
 ```
+
+If we modify the headers it'll return `usersv2`
+```bash
+> curl http://localhost:5000/api/users -I -H "Accept-Version: application/v2"
+HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 5
+Server: Werkzeug/2.0.2 Python/3.9.6
+Date: Mon, 18 Oct 2021 19:35:48 GMT
+```
+
 
 ### Fallback on view
 
@@ -111,7 +122,7 @@ def users():
     return "users", 200
 ```
 
-If we call the endpoint without headers it'll return the fallback view:
+If we call the endpoint without headers it'll return the fallback view `users`:
 
 ```bash
 > curl http://localhost:5000/api/users -I
@@ -122,7 +133,7 @@ Server: Werkzeug/2.0.2 Python/3.9.6
 Date: Mon, 18 Oct 2021 19:42:05 GMT
 ```
 
-If we call the endpoint specifying headers it'll return our new view:
+If we call the endpoint specifying headers it'll return `usersv2`:
 
 ```bash
 > curl http://localhost:5000/api/users -I -H "Accept-Version: application/v2"
