@@ -49,4 +49,4 @@ jobs:
             poetry version ${{ steps.latest_tag.outputs.tag }}
             poetry build
             poetry config pypi-token.pypi ${{ secrets.PYPI_KEY }}
-            poetry publish --username __token__ --dry-run
+            poetry publish --username __token__
