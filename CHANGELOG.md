@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/lemiliomoreno/flask-extend-headers/compare/v1.0.0...v1.1.0) (2021-10-18)
+
+
+### Features
+
+* add python36 support ([#4](https://github.com/lemiliomoreno/flask-extend-headers/issues/4)) ([c144df7](https://github.com/lemiliomoreno/flask-extend-headers/commit/c144df769acc68131b3e45d7272a7319c23c9c9c))
+
 # 1.0.0 (2021-10-18)
 
 
