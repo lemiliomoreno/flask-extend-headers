@@ -2,7 +2,7 @@
 
 Flask extend headers module for API versioning.
 
-PyPI: [flask-extend-headers](https://pypi.org/project/flask-extend-headers/)
+[![PyPI version](https://badge.fury.io/py/flask-extend-headers.svg)](https://badge.fury.io/py/flask-extend-headers)
 
 ## Description
 
