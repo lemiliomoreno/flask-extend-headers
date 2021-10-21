@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/lemiliomoreno/flask-extend-headers/compare/v1.1.0...v1.1.1) (2021-10-21)
+
+
+### Bug Fixes
+
+* support flask version ([#5](https://github.com/lemiliomoreno/flask-extend-headers/issues/5)) ([64782f8](https://github.com/lemiliomoreno/flask-extend-headers/commit/64782f8e8cf942c30629a2edad39ae11fa3a360f))
+
 # [1.1.0](https://github.com/lemiliomoreno/flask-extend-headers/compare/v1.0.0...v1.1.0) (2021-10-18)
 
 
